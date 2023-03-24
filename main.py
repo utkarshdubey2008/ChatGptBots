@@ -33,7 +33,7 @@ async def is_admins(chat_id: int):
 
 @bot.on_message(filters.command("start"))
 async def start(client, message):
-        await message.reply_text("Hi! My name is [LOGIC-AI](https://t.me/logicxupdates). I'm an Artificial Intelligence")
+        await message.reply_text("Hi! My I am a powerful ai chat bot , I can do your all works I am made by [TeamAlpha](https://t.me/TheAlphaBotz). I'm based on Artificial Intelligence")
 
 
 @bot.on_message(
@@ -49,7 +49,7 @@ async def chatbotofd(client, message):
            await is_admins(chat_id)
         ):
            return await message.reply_text(
-                "You are not admin"
+                "You are not an admin"
             )
     is_Logic = Logic.find_one({"chat_id": message.chat.id})
     if not is_Logic:
@@ -72,7 +72,7 @@ async def chatboton(client, message):
             await is_admins(chat_id)
         ):
             return await message.reply_text(
-                "You are not admin"
+                "You are not an admin"
             )
     is_Logic = Logic.find_one({"chat_id": message.chat.id})
     if not is_Logic:           
@@ -86,7 +86,7 @@ async def chatboton(client, message):
     filters.command("chatbot", prefixes=["/", ".", "?", "-"])
     & ~filters.private)
 async def chatbot(client, message):
-    await message.reply_text(f"**Usage:**\n/chatbot [on|off] only in groups. \n ✧Join:-@Logicxupdates✧. ")
+    await message.reply_text(f"**Usage:**\n/chatbot [on|off] only in groups. \n ✧Join:-@thealphabotz✧. ")
 
 
 @bot.on_message(
